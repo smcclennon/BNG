@@ -49,8 +49,10 @@ elif len(arguments) == 2:
 try:
     # Add blues names that exist
     name = ''
-    if first: name += firstBlues[alphabet.index(first[0])] + ' '
-    if middle: name += middleBlues[alphabet.index(middle[0])] + ' '
+    if first:
+        name += f'{firstBlues[alphabet.index(first[0])]} '
+    if middle:
+        name += f'{middleBlues[alphabet.index(middle[0])]} '
     if last: name += lastBlues[alphabet.index(last[0])]
 
     # Print your blues name!
